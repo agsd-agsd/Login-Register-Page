@@ -7,11 +7,7 @@ import FluentUI 1.0
 Item {
     property StackView stackView
 
-    // 修改：绑定 FluentUI 主题背景（默认深色/浅色自适应）
-    Rectangle {
-        anchors.fill: parent
-        color: FluTheme.windowBackgroundColor
-    }
+    // 修改：移除 Rectangle，让背景继承 FluWindow 默认主题（自适应深色/浅色）
 
     ColumnLayout {
         anchors.centerIn: parent

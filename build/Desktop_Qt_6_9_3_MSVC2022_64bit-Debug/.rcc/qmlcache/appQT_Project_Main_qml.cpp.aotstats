@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 12,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 87,
                         "errorMessage": "Cannot load property width from (component in D:/QT/MyWorkspace/QT_Project/Main.qml)::screen with type QObject.",
                         "functionName": "width",
                         "line": 9
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 13,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 17,
                         "errorMessage": "Cannot load property height from (component in D:/QT/MyWorkspace/QT_Project/Main.qml)::screen with type QObject.",
                         "functionName": "height",
                         "line": 10
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 1379,
+                        "durationMicroseconds": 1444,
                         "errorMessage": "Cannot access value for name FluTheme",
                         "functionName": "onCompleted",
                         "line": 15
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 29,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 43,
                         "errorMessage": "Cannot retrieve a non-object type by ID: dialog_close",
                         "functionName": "closeClickListener",
                         "line": 24
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 29,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 92,
                         "errorMessage": "Cannot generate efficient code for LoadClosure",
                         "functionName": "closeClickListener",
                         "line": 24
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 22,
-                        "durationMicroseconds": 186,
+                        "durationMicroseconds": 188,
                         "errorMessage": "Cannot access value for name FluContentDialogType",
                         "functionName": "buttonFlags",
                         "line": 32
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 28,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 83,
                         "errorMessage": "",
                         "functionName": "onPositiveClicked",
                         "line": 33
@@ -70,18 +70,18 @@
                     {
                         "codegenSuccessful": false,
                         "column": 20,
-                        "durationMicroseconds": 176,
+                        "durationMicroseconds": 146,
                         "errorMessage": "Cannot access value for name FluTheme",
                         "functionName": "color",
-                        "line": 40
+                        "line": 41
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 42,
+                        "durationMicroseconds": 41,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 39
+                        "line": 40
                     },
                     {
                         "codegenSuccessful": false,
@@ -89,87 +89,87 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type StackView for binding on stackView.",
                         "functionName": "stackView",
-                        "line": 42
+                        "line": 43
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 35,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 34,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 48
+                        "line": 49
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 362,
+                        "durationMicroseconds": 420,
                         "errorMessage": "Cannot access value for name FluTheme",
                         "functionName": "checked",
-                        "line": 54
-                    },
-                    {
-                        "codegenSuccessful": false,
-                        "column": 40,
-                        "durationMicroseconds": 1424,
-                        "errorMessage": "Cannot access value for name FluTheme",
-                        "functionName": "onClicked",
                         "line": 55
                     },
                     {
                         "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 2077,
+                        "errorMessage": "Cannot access value for name FluTheme",
+                        "functionName": "onClicked",
+                        "line": 56
+                    },
+                    {
+                        "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 312,
+                        "durationMicroseconds": 328,
                         "errorMessage": "Cannot access value for name FluTheme",
                         "functionName": "checked",
-                        "line": 59
+                        "line": 60
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 40,
-                        "durationMicroseconds": 668,
+                        "durationMicroseconds": 719,
                         "errorMessage": "Cannot access value for name FluTheme",
                         "functionName": "onClicked",
-                        "line": 60
+                        "line": 61
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 48,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 71
+                        "line": 72
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 30,
-                        "durationMicroseconds": 65,
+                        "durationMicroseconds": 60,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
-                        "line": 84
+                        "line": 85
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 30,
-                        "durationMicroseconds": 54,
+                        "durationMicroseconds": 49,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
-                        "line": 93
+                        "line": 94
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 30,
-                        "durationMicroseconds": 51,
+                        "durationMicroseconds": 47,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
-                        "line": 102
+                        "line": 103
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 30,
-                        "durationMicroseconds": 51,
+                        "durationMicroseconds": 50,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
-                        "line": 111
+                        "line": 112
                     }
                 ],
                 "filePath": "D:/QT/MyWorkspace/QT_Project/Main.qml"

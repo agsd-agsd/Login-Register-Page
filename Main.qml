@@ -35,9 +35,10 @@ FluWindow {
     StackView {
         id: stackView
         anchors.fill: parent
+        // 修改：绑定 FluTheme 默认背景，自适应深色/浅色
         Rectangle {
             anchors.fill: parent
-            color: FluTheme.dark ? "#000000" : "#FFFFFF"
+            color: FluTheme.windowBackgroundColor
         }
         initialItem: Login { stackView: stackView }
         Component {

@@ -5,59 +5,67 @@
                 "entries": [
                     {
                         "codegenSuccessful": false,
-                        "column": 16,
-                        "durationMicroseconds": 237,
-                        "errorMessage": "Cannot access value for name FluTheme",
-                        "functionName": "color",
-                        "line": 13
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 23,
-                        "durationMicroseconds": 108,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 12
-                    },
-                    {
-                        "codegenSuccessful": false,
                         "column": 22,
-                        "durationMicroseconds": 186,
+                        "durationMicroseconds": 278,
                         "errorMessage": "Cannot access value for name FluContentDialogType",
                         "functionName": "buttonFlags",
-                        "line": 22
+                        "line": 17
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 53,
                         "errorMessage": "Cannot retrieve a non-object type by ID: exitDialog",
                         "functionName": "onNegativeClicked",
-                        "line": 25
+                        "line": 20
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 44,
                         "errorMessage": "Cannot retrieve a non-object type by ID: exitDialog",
                         "functionName": "onPositiveClicked",
-                        "line": 26
+                        "line": 21
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 37,
+                        "durationMicroseconds": 108,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 30
+                        "line": 25
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 55,
+                        "durationMicroseconds": 63,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 37
+                        "line": 31
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 53
                     },
                     {
                         "codegenSuccessful": true,
@@ -65,63 +73,39 @@
                         "durationMicroseconds": 36,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 44
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 31,
-                        "durationMicroseconds": 35,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 51
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 31,
-                        "durationMicroseconds": 37,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 59
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 31,
-                        "durationMicroseconds": 35,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 63
+                        "line": 57
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 556,
+                        "durationMicroseconds": 589,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "onClicked",
-                        "line": 70
+                        "line": 64
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 33,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Cannot retrieve a non-object type by ID: exitDialog",
                         "functionName": "onClicked",
-                        "line": 87
+                        "line": 81
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 32,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "onClicked",
-                        "line": 93
+                        "line": 87
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 51,
+                        "durationMicroseconds": 64,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 94
+                        "line": 88
                     }
                 ],
                 "filePath": "D:/QT/MyWorkspace/QT_Project/Login.qml"
