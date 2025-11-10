@@ -5,83 +5,99 @@
                 "entries": [
                     {
                         "codegenSuccessful": true,
-                        "column": 27,
-                        "durationMicroseconds": 164,
+                        "column": 31,
+                        "durationMicroseconds": 160,
                         "errorMessage": "",
-                        "functionName": "centerIn",
+                        "functionName": "fill",
                         "line": 10
                     },
                     {
                         "codegenSuccessful": true,
-                        "column": 31,
-                        "durationMicroseconds": 77,
+                        "column": 27,
+                        "durationMicroseconds": 46,
                         "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 17
+                        "functionName": "centerIn",
+                        "line": 13
                     },
                     {
                         "codegenSuccessful": true,
-                        "column": 109,
-                        "durationMicroseconds": 40,
+                        "column": 31,
+                        "durationMicroseconds": 76,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 20
                     },
                     {
                         "codegenSuccessful": true,
-                        "column": 107,
-                        "durationMicroseconds": 37,
+                        "column": 31,
+                        "durationMicroseconds": 47,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 21
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 112,
-                        "durationMicroseconds": 36,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 22
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 118,
-                        "durationMicroseconds": 37,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 23
+                        "line": 27
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 33,
+                        "durationMicroseconds": 42,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 26
+                        "line": 34
                     },
                     {
                         "codegenSuccessful": true,
-                        "column": 28,
-                        "durationMicroseconds": 2071,
+                        "column": 31,
+                        "durationMicroseconds": 40,
                         "errorMessage": "",
-                        "functionName": "onClicked",
-                        "line": 31
+                        "functionName": "alignment",
+                        "line": 41
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 48
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 56
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 58,
+                        "durationMicroseconds": 269,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "onClicked",
-                        "line": 45
+                        "line": 63
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 46
+                        "line": 62
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot access value for name stackView",
+                        "functionName": "onClicked",
+                        "line": 81
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 82
                     }
                 ],
                 "filePath": "D:/QT/MyWorkspace/QT_Project/Register.qml"

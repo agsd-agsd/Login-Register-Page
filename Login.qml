@@ -7,10 +7,7 @@ import FluentUI 1.0
 Item {
     property StackView stackView
 
-    Rectangle {
-        anchors.fill: parent
-        color: "black"  // 保留原有背景
-    }
+    Rectangle { anchors.fill: parent; color: "black" }
 
     FluContentDialog {
         id: exitDialog
@@ -21,20 +18,8 @@ Item {
         buttonFlags: FluContentDialogType.NegativeButton | FluContentDialogType.PositiveButton
         width: 300
 
-        onNegativeClicked: {
-            // 取消时，可以显示提示或直接关闭
-            console.log("点击了取消按钮")
-            // 如果有showSuccess函数，可以用：showSuccess(qsTr("点击了取消按钮"))
-            exitDialog.close()  // 确保关闭对话框
-        }
-
-        onPositiveClicked: {
-            // 确定退出
-            console.log("点击了确定按钮")
-            // 如果有showSuccess函数，可以用：showSuccess(qsTr("点击了确定按钮"))
-            exitDialog.close()  // 关闭对话框
-            Qt.quit()  // 执行退出应用
-        }
+        onNegativeClicked: { console.log("取消"); exitDialog.close() }
+        onPositiveClicked: { console.log("退出"); exitDialog.close(); Qt.quit() }
     }
 
     ColumnLayout {
@@ -61,31 +46,47 @@ Item {
             Layout.preferredWidth: 200
             Layout.alignment: Qt.AlignHCenter
         }
+
+        FluText {
+            id: errorLabel
+            color: "red"
+            text: ""
+            visible: false
+            Layout.alignment: Qt.AlignHCenter
+        }
+
         RowLayout {
-                Layout.alignment: Qt.AlignHCenter
-                spacing: 10
+            Layout.alignment: Qt.AlignHCenter
+            spacing: 10
 
-                FluButton {
-                    id: loginButton
-                    text: "登录"
-                    Layout.preferredWidth: 80
-                    Layout.alignment: Qt.AlignHCenter
-                }
-
-                FluButton {
-                    text: "退出"  // 新增退出按钮
-                    Layout.preferredWidth: 80
-                    onClicked: {
-                        exitDialog.open()
+            FluButton {
+                id: loginButton
+                text: "登录"
+                Layout.preferredWidth: 80
+                onClicked: {
+                    var username = usernameField.text.trim()
+                    var password = passwordField.text
+                    if (username === "" || password.length < 6) {
+                        errorLabel.text = qsTr("用户名不能为空，密码至少6位")
+                        errorLabel.visible = true
+                        return
                     }
+                    errorLabel.visible = false
+                    console.log("登录提交:", username)
+                    stackView.push(dashboardPage)
                 }
+            }
+
+            FluButton {
+                text: "退出"
+                Layout.preferredWidth: 80
+                onClicked: exitDialog.open()
+            }
         }
 
         FluTextButton {
-            text: "没有账户？点击注册"  // 保留原有按钮，假设这是注册入口
-            onClicked: {
-                stackView.push("Register.qml", {stackView: stackView})
-            }
+            text: qsTr("没有账户？点击注册")
+            onClicked: stackView.push("Register.qml", {stackView: stackView})
             Layout.alignment: Qt.AlignHCenter
         }
     }
