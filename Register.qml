@@ -7,8 +7,6 @@ import FluentUI 1.0
 Item {
     property StackView stackView
 
-    // 修改：移除 Rectangle，让背景继承 FluWindow 默认主题（自适应深色/浅色）
-
     ColumnLayout {
         anchors.centerIn: parent
         spacing: 20
@@ -16,7 +14,6 @@ Item {
         FluCopyableText {
             text: "用户注册"
             font.pixelSize: 24
-            color: "white"
             Layout.alignment: Qt.AlignHCenter
         }
 

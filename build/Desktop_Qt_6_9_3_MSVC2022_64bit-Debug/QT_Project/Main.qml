@@ -35,47 +35,7 @@ FluWindow {
     StackView {
         id: stackView
         anchors.fill: parent
-        // 修改：绑定 FluTheme 默认背景，自适应深色/浅色
-        Rectangle {
-            anchors.fill: parent
-            color: FluTheme.windowBackgroundColor
-        }
         initialItem: Login { stackView: stackView }
-        Component {
-            id: themePage
-            FluScrollablePage {
-                title: qsTr("主题设置")
-                FluFrame {
-                    anchors.fill: parent
-                    padding: 10
-                    ColumnLayout {
-                        spacing: 10
-                        FluText { text: qsTr("暗黑模式") }
-                        FluToggleSwitch {
-                            checked: FluTheme.dark
-                            onClicked: FluTheme.darkMode = FluTheme.dark ? FluThemeType.Light : FluThemeType.Dark
-                        }
-                        FluText { text: qsTr("动画效果") }
-                        FluToggleSwitch {
-                            checked: FluTheme.animationEnabled
-                            onClicked: FluTheme.animationEnabled = !FluTheme.animationEnabled
-                        }
-                    }
-                }
-            }
-        }
-        Component {
-            id: dashboardPage
-            FluPage {
-                title: "仪表盘"
-                FluText {
-                    anchors.centerIn: parent
-                    text: "欢迎！航班管理系统"
-                    font.pixelSize: 24
-                    color: "white"
-                }
-            }
-        }
         pushEnter: Transition {
             PropertyAnimation {
                 property: "opacity"
