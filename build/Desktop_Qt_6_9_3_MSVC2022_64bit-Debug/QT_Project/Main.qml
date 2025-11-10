@@ -10,82 +10,36 @@ FluWindow {
     height: 0.4 * screen.height
     visible: true
     title: qsTr("飞行管理系统")
-
     // 禁用系统标题栏
     useSystemAppBar: false
-
     Component.onCompleted: {
         FluTheme.darkMode = FluThemeType.Dark
         FluTheme.accentColor = FluColors.Blue
         FluTheme.animationEnabled = true
     }
-
-    // 自定义 appBar（覆盖默认，添加右上角按钮）
     appBar: FluAppBar {
-        id: customAppBar
-        title: "AIR 飞行管理系统"
-        height: 48
-
-        // 左侧：帮助图标
-        RowLayout {
-            anchors.left: parent.left
-            anchors.leftMargin: 10
-            spacing: 10
-            FluIconButton {
-                icon: FluentIcons.Help
-                ToolTip.text: "主题设置"
-                ToolTip.visible: hovered
-                onClicked: stackView.push(themePage)
-            }
-        }
-
-        // 右侧：主题切换 + 设置 + 窗口按钮
-        RowLayout {
-            anchors.right: parent.right
-            anchors.rightMargin: 10
-            spacing: 10
-            FluIconButton {
-                icon: FluentIcons.Brightness
-                ToolTip.text: "切换浅色主题"
-                ToolTip.visible: hovered
-                onClicked: {
-                    FluTheme.darkMode = FluThemeType.Light
-                    console.log("切换到浅色主题")
-                }
-            }
-            FluIconButton {
-                icon: FluentIcons.Settings
-                ToolTip.text: "设置"
-                ToolTip.visible: hovered
-                onClicked: console.log("打开设置")
-            }
-            // 窗口控制（最小化/最大化/关闭）
-            FluIconButton {
-                icon: FluentIcons.ChromeMinimize
-                onClicked: window.showMinimized()
-            }
-            FluIconButton {
-                icon: FluentIcons.ChromeMaximize
-                onClicked: window.visibility = window.visibility === Window.Maximized ? Window.Windowed : Window.Maximized
-            }
-            FluIconButton {
-                icon: FluentIcons.ChromeClose
-                onClicked: window.close()
-            }
-        }
+        id: appBar
+        height: 36
+        showDark: true
+        closeClickListener: ()=>{ dialog_close.open() }
     }
-
+    FluContentDialog {
+        id: dialog_close
+        title: qsTr("退出")
+        message: qsTr("确定要退出飞行管理系统吗？")
+        negativeText: qsTr("取消")
+        positiveText: qsTr("退出")
+        buttonFlags: FluContentDialogType.NegativeButton | FluContentDialogType.PositiveButton
+        onPositiveClicked: Qt.quit()
+    }
     StackView {
         id: stackView
         anchors.fill: parent
-
         Rectangle {
             anchors.fill: parent
             color: FluTheme.dark ? "#000000" : "#FFFFFF"
         }
-
         initialItem: Login { stackView: stackView }
-
         Component {
             id: themePage
             FluScrollablePage {
@@ -109,7 +63,6 @@ FluWindow {
                 }
             }
         }
-
         Component {
             id: dashboardPage
             FluPage {
@@ -122,7 +75,6 @@ FluWindow {
                 }
             }
         }
-
         pushEnter: Transition {
             PropertyAnimation {
                 property: "opacity"
