@@ -4,5 +4,6 @@ prefer :/qt/qml/QT_Project/
 Main 254.0 Main.qml
 Login 254.0 Login.qml
 Register 254.0 Register.qml
+CodeExpander 254.0 component/CodeExpander.qml
 depends QtQuick
 

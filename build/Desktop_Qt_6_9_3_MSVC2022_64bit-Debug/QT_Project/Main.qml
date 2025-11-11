@@ -12,10 +12,17 @@ FluWindow {
     title: qsTr("飞行管理系统")
     // 禁用系统标题栏
     useSystemAppBar: false
+
+    effect: "gaussian-blur"  // 高斯模糊（毛玻璃核心）
+    tintOpacity: 0.8  // 低透明度（增强霜感，减少着色）
+    blurRadius: 60  // 高模糊半径（更强霜效果）
+
     Component.onCompleted: {
         FluTheme.darkMode = FluThemeType.Dark
         FluTheme.accentColor = FluColors.Blue
         FluTheme.animationEnabled = true
+        FluTheme.nativeText = true
+        FluTheme.blurBehindWindowEnabled = true  // 全局启用模糊
     }
     appBar: FluAppBar {
         id: appBar

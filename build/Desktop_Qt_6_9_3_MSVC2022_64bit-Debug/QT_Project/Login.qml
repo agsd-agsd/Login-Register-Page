@@ -7,20 +7,6 @@ import FluentUI 1.0
 Item {
     property StackView stackView
 
-
-    FluContentDialog {
-        id: exitDialog
-        title: qsTr("友情提示")
-        message: qsTr("确定要退出吗？")
-        negativeText: qsTr("取消")
-        positiveText: qsTr("确定")
-        buttonFlags: FluContentDialogType.NegativeButton | FluContentDialogType.PositiveButton
-        width: 300
-
-        onNegativeClicked: { console.log("取消"); exitDialog.close() }
-        onPositiveClicked: { console.log("退出"); exitDialog.close(); Qt.quit() }
-    }
-
     ColumnLayout {
         anchors.centerIn: parent
         spacing: 20
@@ -53,32 +39,22 @@ Item {
             Layout.alignment: Qt.AlignHCenter
         }
 
-        RowLayout {
+        FluButton {
+            id: loginButton
+            text: "登录"
+            Layout.preferredWidth: 80
             Layout.alignment: Qt.AlignHCenter
-            spacing: 10
-
-            FluButton {
-                id: loginButton
-                text: "登录"
-                Layout.preferredWidth: 80
-                onClicked: {
-                    var username = usernameField.text.trim()
-                    var password = passwordField.text
-                    if (username === "" || password.length < 6) {
-                        errorLabel.text = qsTr("用户名不能为空，密码至少6位")
-                        errorLabel.visible = true
-                        return
-                    }
-                    errorLabel.visible = false
-                    console.log("登录提交:", username)
-                    stackView.push(dashboardPage)
+            onClicked: {
+                var username = usernameField.text.trim()
+                var password = passwordField.text
+                if (username === "" || password.length < 6) {
+                    errorLabel.text = qsTr("用户名不能为空，密码至少6位")
+                    errorLabel.visible = true
+                    return
                 }
-            }
-
-            FluButton {
-                text: "退出"
-                Layout.preferredWidth: 80
-                onClicked: exitDialog.open()
+                errorLabel.visible = false
+                console.log("登录提交:", username)
+                stackView.push(dashboardPage)
             }
         }
 

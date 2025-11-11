@@ -26,6 +26,13 @@ namespace _qt_qml_QT_Project_Register_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_QT_Project_component_CodeExpander_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -43,6 +50,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/QT_Project/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_QT_Project_Main_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/QT_Project/Login.qml"), &QmlCacheGeneratedCode::_qt_qml_QT_Project_Login_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/QT_Project/Register.qml"), &QmlCacheGeneratedCode::_qt_qml_QT_Project_Register_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/QT_Project/component/CodeExpander.qml"), &QmlCacheGeneratedCode::_qt_qml_QT_Project_component_CodeExpander_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

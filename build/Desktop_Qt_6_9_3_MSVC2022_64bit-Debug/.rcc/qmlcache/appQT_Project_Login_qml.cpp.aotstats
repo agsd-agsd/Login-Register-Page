@@ -4,41 +4,33 @@
             {
                 "entries": [
                     {
-                        "codegenSuccessful": false,
-                        "column": 22,
-                        "durationMicroseconds": 278,
-                        "errorMessage": "Cannot access value for name FluContentDialogType",
-                        "functionName": "buttonFlags",
-                        "line": 17
-                    },
-                    {
-                        "codegenSuccessful": false,
-                        "column": 28,
-                        "durationMicroseconds": 53,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: exitDialog",
-                        "functionName": "onNegativeClicked",
-                        "line": 20
-                    },
-                    {
-                        "codegenSuccessful": false,
-                        "column": 28,
-                        "durationMicroseconds": 44,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: exitDialog",
-                        "functionName": "onPositiveClicked",
-                        "line": 21
-                    },
-                    {
                         "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 108,
+                        "durationMicroseconds": 151,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 25
+                        "line": 11
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 63,
+                        "durationMicroseconds": 81,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 24
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 42,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 31
@@ -46,66 +38,42 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 43,
+                        "durationMicroseconds": 63,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 38
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 31,
-                        "durationMicroseconds": 40,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 45
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 31,
-                        "durationMicroseconds": 39,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 53
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 31,
-                        "durationMicroseconds": 36,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 57
-                    },
-                    {
-                        "codegenSuccessful": false,
-                        "column": 28,
-                        "durationMicroseconds": 589,
-                        "errorMessage": "Cannot access value for name stackView",
-                        "functionName": "onClicked",
-                        "line": 64
-                    },
-                    {
-                        "codegenSuccessful": false,
-                        "column": 28,
-                        "durationMicroseconds": 36,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: exitDialog",
-                        "functionName": "onClicked",
-                        "line": 81
+                        "line": 39
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 36,
+                        "durationMicroseconds": 1377,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "onClicked",
-                        "line": 87
+                        "line": 47
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 88
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "Cannot access value for name stackView",
+                        "functionName": "onClicked",
+                        "line": 63
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 64
                     }
                 ],
                 "filePath": "D:/QT/MyWorkspace/QT_Project/Login.qml"

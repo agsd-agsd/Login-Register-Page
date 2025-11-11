@@ -24,13 +24,6 @@ Item {
             Layout.alignment: Qt.AlignHCenter
         }
 
-        FluTextBox {
-            id: emailField
-            placeholderText: "邮箱"
-            Layout.preferredWidth: 200
-            Layout.alignment: Qt.AlignHCenter
-        }
-
         FluPasswordBox {
             id: regPassword
             placeholderText: "密码"

@@ -1055,6 +1055,8 @@
 		"D:/QT/QT/6.9.3/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"D:/QT/QT/6.9.3/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
 		"D:/QT/QT/6.9.3/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"D:/QT/QT/6.9.3/msvc2022_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"D:/QT/QT/6.9.3/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"D:/QT/QT/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"D:/QT/QT/6.9.3/msvc2022_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.qt/qml_imports/appQT_Project_conf.cmake"
@@ -1130,10 +1132,12 @@
 	"MOC_SKIP" : 
 	[
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.qt/rcc/qrc_appQT_Project_raw_qml_0.cpp",
+		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.qt/rcc/qrc_appQT_Project_raw_qml_0_extra_qmldirs.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.qt/rcc/qrc_qmake_QT_Project.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_Login_qml.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_Main_qml.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_Register_qml.cpp",
+		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_component/CodeExpander_qml.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_qmlcache_loader.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/appqt_project_qmltyperegistrations.cpp"
 	],
@@ -1154,10 +1158,12 @@
 	"UIC_SKIP" : 
 	[
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.qt/rcc/qrc_appQT_Project_raw_qml_0.cpp",
+		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.qt/rcc/qrc_appQT_Project_raw_qml_0_extra_qmldirs.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.qt/rcc/qrc_qmake_QT_Project.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_Login_qml.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_Main_qml.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_Register_qml.cpp",
+		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_component/CodeExpander_qml.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/.rcc/qmlcache/appQT_Project_qmlcache_loader.cpp",
 		"D:/QT/MyWorkspace/QT_Project/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Debug/appqt_project_qmltyperegistrations.cpp"
 	],
