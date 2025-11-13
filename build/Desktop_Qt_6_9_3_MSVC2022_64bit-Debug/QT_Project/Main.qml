@@ -3,15 +3,16 @@ import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
 import FluentUI 1.0
+import AppComponents 1.0
+import "./component"
 
 FluWindow {
     id: window
     width: 0.4 * screen.width
     height: 0.4 * screen.height
     visible: true
-    title: qsTr("飞行管理系统")
-    // 禁用系统标题栏
-    useSystemAppBar: false
+    launchMode: FluWindowType.SingleTask
+    fitsAppBarWindows: true
 
     effect: "gaussian-blur"  // 高斯模糊（毛玻璃核心）
     tintOpacity: 0.8  // 低透明度（增强霜感，减少着色）
@@ -24,11 +25,62 @@ FluWindow {
         FluTheme.nativeText = true
         FluTheme.blurBehindWindowEnabled = true  // 全局启用模糊
     }
+
     appBar: FluAppBar {
         id: appBar
         height: 36
         showDark: true
+        darkClickListener:(button)=>handleDarkChanged(button)
         closeClickListener: ()=>{ dialog_close.open() }
+    }
+
+    function handleDarkChanged(button){
+        if(FluTools.isMacos() || !FluTheme.animationEnabled){
+            changeDark()
+        }else{
+            loader_reveal.sourceComponent = com_reveal
+            var target = window.containerItem()
+            var pos = button.mapToItem(target,0,0)
+            var mouseX = pos.x + button.width / 2
+            var mouseY = pos.y + button.height / 2
+            var radius = Math.max(distance(mouseX,mouseY,0,0),distance(mouseX,mouseY,target.width,0),distance(mouseX,mouseY,0,target.height),distance(mouseX,mouseY,target.width,target.height))
+            var reveal = loader_reveal.item
+            reveal.start(reveal.width*Screen.devicePixelRatio,reveal.height*Screen.devicePixelRatio,Qt.point(mouseX,mouseY),radius)
+        }
+    }
+
+    Component{
+        id: com_reveal
+        CircularReveal{
+            id: reveal
+            target: window.containerItem()
+            anchors.fill: parent
+            darkToLight: FluTheme.dark
+            onAnimationFinished:{
+                //动画结束后释放资源
+                loader_reveal.sourceComponent = undefined
+            }
+            onImageChanged: {
+                changeDark()
+            }
+        }
+    }
+
+    function distance(x1,y1,x2,y2){
+        return Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
+    }
+
+    function changeDark(){
+        if(FluTheme.dark){
+            FluTheme.darkMode = FluThemeType.Light
+        }else{
+            FluTheme.darkMode = FluThemeType.Dark
+        }
+    }
+
+    FluLoader{
+        id:loader_reveal
+        anchors.fill: parent
     }
     FluContentDialog {
         id: dialog_close
